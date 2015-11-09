@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TvTest_Nov8_2015" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YcO-UI-ScF">
+                                <rect key="frame" x="0.0" y="0.0" width="1000" height="600"/>
+                                <animations/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Jzd-ZL-xaU">
+                                    <size key="itemSize" width="339" height="559"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="N18-PM-KhH" customClass="MovieCellCollectionViewCell" customModule="TvTest_Nov8_2015" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="339" height="559"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="339" height="559"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Anchorman.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="4Y5-Pu-3vO">
+                                                    <rect key="frame" x="13" y="26" width="312" height="483"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="483" id="Znc-jH-A9s"/>
+                                                        <constraint firstAttribute="height" constant="519" id="eih-gH-s1A"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Anchorman" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpA-4h-kMJ">
+                                                    <rect key="frame" x="13" y="521" width="312" height="21"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="FLD-Gq-Eve"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstItem="4Y5-Pu-3vO" firstAttribute="top" secondItem="N18-PM-KhH" secondAttribute="topMargin" constant="18" id="3TR-8A-zDR"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="4Y5-Pu-3vO" secondAttribute="trailing" constant="6" id="Axx-a2-UyL"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="4Y5-Pu-3vO" secondAttribute="trailing" constant="5" id="C8Q-MV-aod"/>
+                                            <constraint firstItem="dpA-4h-kMJ" firstAttribute="top" secondItem="4Y5-Pu-3vO" secondAttribute="bottom" constant="12" id="EaN-BV-bvy"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="4Y5-Pu-3vO" secondAttribute="trailing" constant="6" id="Fk1-mm-qg8"/>
+                                            <constraint firstItem="4Y5-Pu-3vO" firstAttribute="top" secondItem="N18-PM-KhH" secondAttribute="topMargin" constant="5" id="JU9-Mf-2gr"/>
+                                            <constraint firstItem="4Y5-Pu-3vO" firstAttribute="top" secondItem="N18-PM-KhH" secondAttribute="topMargin" constant="18" id="LfJ-KC-2aP"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="dpA-4h-kMJ" secondAttribute="trailing" constant="6" id="WrF-Ln-yEE"/>
+                                            <constraint firstItem="4Y5-Pu-3vO" firstAttribute="leading" secondItem="N18-PM-KhH" secondAttribute="leadingMargin" constant="5" id="Zgg-rL-n3w"/>
+                                            <constraint firstItem="4Y5-Pu-3vO" firstAttribute="top" secondItem="N18-PM-KhH" secondAttribute="topMargin" constant="12" id="aia-7I-kIc"/>
+                                            <constraint firstItem="4Y5-Pu-3vO" firstAttribute="leading" secondItem="N18-PM-KhH" secondAttribute="leadingMargin" constant="5" id="cGw-sa-zGk"/>
+                                            <constraint firstItem="4Y5-Pu-3vO" firstAttribute="leading" secondItem="N18-PM-KhH" secondAttribute="leadingMargin" constant="5" id="eva-xx-0V6"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="4Y5-Pu-3vO" secondAttribute="trailing" constant="6" id="gfs-WQ-2jF"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="4Y5-Pu-3vO" secondAttribute="trailing" constant="6" id="kVG-xS-OFk"/>
+                                            <constraint firstItem="dpA-4h-kMJ" firstAttribute="leading" secondItem="N18-PM-KhH" secondAttribute="leadingMargin" constant="5" id="r1c-w0-tNw"/>
+                                            <constraint firstItem="4Y5-Pu-3vO" firstAttribute="leading" secondItem="N18-PM-KhH" secondAttribute="leadingMargin" constant="5" id="sT8-a1-Mls"/>
+                                            <constraint firstItem="4Y5-Pu-3vO" firstAttribute="leading" secondItem="N18-PM-KhH" secondAttribute="leadingMargin" constant="5" id="shh-c9-rDD"/>
+                                            <constraint firstItem="4Y5-Pu-3vO" firstAttribute="top" secondItem="N18-PM-KhH" secondAttribute="topMargin" constant="12" id="tqh-U3-iaL"/>
+                                            <constraint firstItem="4Y5-Pu-3vO" firstAttribute="leading" secondItem="N18-PM-KhH" secondAttribute="leadingMargin" constant="10" id="xAf-TL-FC4"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="4Y5-Pu-3vO" secondAttribute="trailing" constant="5" id="yek-Mu-t3X"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="movieImg" destination="4Y5-Pu-3vO" id="soj-7c-1wZ"/>
+                                            <outlet property="movieLabel" destination="dpA-4h-kMJ" id="W47-Y7-2o9"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1000" height="600"/>
+                    <connections>
+                        <outlet property="CollectionView" destination="YcO-UI-ScF" id="Fb8-Zb-2rk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="385"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Anchorman.jpeg" width="183" height="275"/>
+    </resources>
+</document>
